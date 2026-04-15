@@ -9,11 +9,14 @@ set(CMAKE_C_EXTENSIONS OFF)
 # 1. explicitly list your files. No GLOB traps.
 # Add new ones here as you write them.
 set(SOURCES
-    main.c
     chunk.c
+    compiler.c
     debug.c
-    value.c
+    main.c
     memory.c
+    scanner.c
+    value.c
+    vm.c
     # add scanner.c, compiler.c, etc. as you make them
 )
 
