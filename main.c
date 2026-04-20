@@ -48,7 +48,6 @@ static char *readFile(const char *path) {
 
     fclose(file);
     return buffer;
-
 }
 
 static void runFile(const char *path) {
@@ -75,7 +74,6 @@ int main(int argc, const char *argv[]) {
         fprintf(stderr, "Usage: clox [path]\n");
         exit(64);
     }
-
 
     freeVM();
 
