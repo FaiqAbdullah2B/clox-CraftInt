@@ -10,6 +10,7 @@ typedef struct{
     uint8_t *ip; // Points at the instruction about to be executed.
     Value stack[STACK_MAX];
     Value *stackTop; // Points to the value just above the top of the stack.
+    Obj* objects; // head of the list
 } VM;
 
 typedef enum {
@@ -17,6 +18,8 @@ typedef enum {
     INTERPRET_COMPILE_ERROR,
     INTERPRET_RUNTIME_ERROR
 } InterpretResult;
+
+extern VM vm;
 
 void initVM(void);
 void freeVM(void);
