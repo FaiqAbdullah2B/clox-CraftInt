@@ -12,6 +12,7 @@ typedef struct{
     Value stack[STACK_MAX];
     Value *stackTop; // Points to the value just above the top of the stack.
     Table strings;
+    Table globals;
     Obj* objects; // head of the list
 } VM;
 
