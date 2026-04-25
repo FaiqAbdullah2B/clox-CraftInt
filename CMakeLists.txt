@@ -26,6 +26,7 @@ set(SOURCES
     main.c
     memory.c
     scanner.c
+    table.c
     object.c
     value.c
     vm.c

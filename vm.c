@@ -29,16 +29,16 @@ static void runtimeError(const char* format, ...) {
   resetStack();
 }
 
-
 void initVM(void){
+    initTable(&vm.strings);
     resetStack();
     vm.objects = NULL;
 }
 
 void freeVM(void){
+    freeTable(&vm.strings);
     freeObjects();
 }
-
 
 void push(Value value) {
     *vm.stackTop = value;
