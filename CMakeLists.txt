@@ -55,7 +55,7 @@ else()
         -Wstrict-prototypes
         -Wold-style-definition
         -Wcast-align
-        -Wunused-parameter
+        #-Wunused-parameter     # Nystrom's code conatins unused parameters
         -Wuninitialized
         #-Wconversion           # Nystrom's code WILL trip this (implicit downcasts)
     )
