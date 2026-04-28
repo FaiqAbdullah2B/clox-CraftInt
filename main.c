@@ -17,7 +17,7 @@ static void repl(void) {
             break;
         }
 
-        interpret(line);
+    interpret(line);
     }
 }
 
